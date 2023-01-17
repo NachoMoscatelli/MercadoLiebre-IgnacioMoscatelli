@@ -1,0 +1,330 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Familia: 'Roboto'
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+/* --------------------------------GENERALES-------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+
+/* --------------------------------FIN GTENERALES-------------------------------- */
+
+
+
+
+
+/* --------------------------------HEADER-------------------------------- */
+
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header_top_bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 48%;
+    max-width: 180px;
+    height: auto;
+}
+
+.search_bar{
+    width: 48%;
+    max-width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+.search_bar input {
+    max-width: 80%;
+    border: 0;
+    flex: 1;
+    background-color:unset;
+}
+
+.search_bar button {
+    border: 0;
+    text-align: right;
+    background-color:unset;
+    padding-left: 5px;
+    border-left: solid 1px #666;
+}
+
+.header_top_bar h2 {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+nav {
+    display: none;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 10px;
+    color: initial;
+}
+
+.page_nav {
+    margin-bottom: 20px;
+}
+
+.user_nav{
+    margin-bottom: 20px;
+}
+
+.burger_menu {
+    margin: auto;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    text-align: center;
+    padding-top: 7px;
+    color: #ebebeb;
+    font-size: 25px;
+}
+
+/* --------------------------------FIN HEADER-------------------------------- */
+
+
+.banner_home img{
+    width: 100vw;
+    height: auto;
+}
+
+
+/* --------------------------------MAIN-------------------------------- */
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+
+.title{
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+main section{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+}
+
+/* --------------------------------ARTICULOS-------------------------------- */
+main article {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 290px;
+}
+
+main article img {
+    width:100%;
+    height: auto;
+}
+
+.article-detail{
+    position: relative;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+.price_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.price{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+.discount{
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+
+.description{
+    font-size: 16px;
+    color: #666;
+    font-weight: lighter;
+    display: none;
+}
+
+/* --------------------------------FIN ARTICULOS-------------------------------- */
+
+/* --------------------------------FIN MAIN-------------------------------- */
+
+
+
+
+
+
+/* --------------------------------FOOTER-------------------------------- */
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: white;
+    width: 97vw;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 1vw;
+}
+
+footer article {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+footer article h5, footer article p {
+    font-size: 18px;
+}
+
+footer h6 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+/* --------------------------------FIN FOOTER-------------------------------- */
+
+
+
+
+
+/* -------------------------- TABLET (min 361px)------------------------- */
+@media (min-width: 361px) {
+    
+    .search_bar{
+        max-width: 80%;
+    }
+
+    .search_bar input{
+        max-width: 85%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    nav ul li{
+        margin: 0 3px;
+    }
+
+    .burger_menu{
+        display: none;
+    }
+
+    .description {
+        display: block;
+    }
+
+    main article {
+        max-width: 152px;
+        margin-right: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+/* -------------------------- DESKTOP (min 769px)------------------------- */
+
+@media (min-width: 768px) {
+    .header_top_bar h2 {
+        margin: 0;
+    }
+
+    .search_bar{
+        width: 25%;
+        max-width: unset;
+    }
+
+    .search_bar input{
+        max-width: 85%;
+    }
+
+    nav li a {
+        font-size: 17px;
+    }
+    
+    main article {
+        max-width: 162px;
+    }
+}

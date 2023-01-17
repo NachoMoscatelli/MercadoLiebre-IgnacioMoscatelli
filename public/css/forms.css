@@ -1,0 +1,45 @@
+
+main {
+    min-height: 40vh;
+}
+
+form {
+    margin: auto;
+}
+
+form > input {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    width: 90%;
+    height: 30px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+form label.horizontal {
+    display: flex;
+    align-items: center;
+}
+
+form label.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+form label div{
+    margin: 15px 10px;
+}
+
+form label div input{
+    margin-right: 5px;
+}
+
+form label.vertical div * {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+}
