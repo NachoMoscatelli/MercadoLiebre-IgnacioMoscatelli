@@ -43,3 +43,20 @@ button {
     display: block;
     margin: 10px auto;
 }
+
+.summit, .reset{
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.summit{
+    width: 90%;
+    background-color: #1259c3;
+}
+
+.reset{
+    width: 70%;
+    background-color: #666;
+}
