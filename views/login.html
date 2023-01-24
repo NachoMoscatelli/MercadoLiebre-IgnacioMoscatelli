@@ -49,10 +49,10 @@
     </header>
     
     <main>
-      <form action="">
-        <input type="text" name="userName" placeholder="Nombre usuarios">
+      <form action="/" method="post">
+        <input type="text" name="userName" placeholder="Nombre usuarios"  min="5" required>
 
-        <input type="password" name="password" id="" placeholder="Contraseña">
+        <input type="password" name="password" id="" placeholder="Contraseña" min="8" required>
 
         <button class="summit" type="submit">Ingresar</button>
       </form>  

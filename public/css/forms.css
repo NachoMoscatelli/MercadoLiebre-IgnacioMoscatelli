@@ -1,6 +1,6 @@
 
 main {
-    min-height: 40vh;
+    max-width: 1024px;
 }
 
 form {
@@ -20,11 +20,13 @@ form > input {
 form label.horizontal {
     display: flex;
     align-items: center;
+    margin-left: 5%;
 }
 
 form label.vertical {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
 }
 
 form label div{
@@ -60,3 +62,4 @@ button {
     width: 70%;
     background-color: #666;
 }
+

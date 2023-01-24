@@ -48,21 +48,21 @@
     </header>
 
     <main>
-        <form action="">
-            <input type="text" name="fullName" placeholder="Nombre y Apellido">
+        <form action="/" method="post">
+            <input type="text" name="fullName" placeholder="Nombre y Apellido" min="5" required>
 
-            <input type="text" name="userName" placeholder="Nombre usuarios">
+            <input type="text" name="userName" placeholder="Nombre usuarios" min="5" required>
 
-            <input type="email" name="email" id="" placeholder="Email">
+            <input type="email" name="email" id="" placeholder="Email" required>
 
             <label for="birthday">Fecha de Nacimiento</label>
-            <input type="date" name="birthday" id="">
+            <input type="date" name="birthday" id="" min="1920-01-01" max="2015-01-01" required>
 
             <input type="text" name="address" placeholder="Domicilio">
 
             <label for="userProfile">Perfil de usuario</label>
             <label class="horizontal" for="userProfile">
-                <div><input type="radio" name="userProfile" id="comprador"> Comprador</div>
+                <div><input type="radio" name="userProfile" id="comprador" checked> Comprador</div>
                 <div><input type="radio" name="userProfile" id="vendedor"> Vendedor</div>
             </label>
             
@@ -78,8 +78,8 @@
             <label for="userFoto">Foro de usuario</label>
             <input type="file" name="userFoto" id="">
 
-            <input type="password" name="password" id="" placeholder="Contraseña">
-            <input type="password" name="confirmPasword" id="" placeholder="Confirma contraseña">
+            <input type="password" name="password" id="" placeholder="Contraseña" min="8" required>
+            <input type="password" name="confirmPasword" id="" placeholder="Confirma contraseña" min="8" required>
 
             <button class="summit" type="submit">Enviar</button>
             <button class="reset" type="reset">Reiniciar</button>
