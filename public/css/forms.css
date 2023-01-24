@@ -58,6 +58,10 @@ button {
     background-color: #1259c3;
 }
 
+.summit:hover{
+    background-color: #0022AA;
+}
+
 .reset{
     width: 70%;
     background-color: #666;

@@ -164,6 +164,10 @@ main article {
     margin-bottom: 10px;
     margin-top: 10px;
     max-width: 290px;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 main article img {
@@ -175,7 +179,6 @@ main article img {
     position: relative;
     border-top: solid 1px #ebebeb;
     padding: 15px;
-    background-color: white;
 }
 
 .price_container {
@@ -229,7 +232,7 @@ main section article i{
 
 footer {
     margin-top: 20px;
-    padding-top: 10px;
+    padding: 30px 50px;
     background-color: white;
     width: 97vw;
     height: auto;
@@ -247,6 +250,10 @@ footer article i {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+}
+
+footer article i:hover{
+    color: #0022AA;
 }
 
 footer article h5, footer article p {
@@ -295,14 +302,16 @@ footer h6 {
         display: none;
     }
 
-    .description {
+    .article-detail:hover .description {
         display: block;
     }
 
     main article {
-        border-radius: 5px;
         max-width: 45%;
-        margin-right: 10px;
+        border-radius: 5px;
+    }
+    
+    main article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
@@ -330,5 +339,10 @@ footer h6 {
     
     main article {
         max-width: 23%;
+    }
+
+    .flex_container{
+        display: flex;
+        flex-direction: row;
     }
 }
