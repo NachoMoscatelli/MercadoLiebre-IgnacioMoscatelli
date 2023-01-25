@@ -56,6 +56,7 @@ button {
 .summit{
     width: 90%;
     background-color: #1259c3;
+    transition: all 350ms;
 }
 
 .summit:hover{

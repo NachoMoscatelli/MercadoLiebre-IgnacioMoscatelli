@@ -186,6 +186,10 @@ main article img {
     justify-content: space-between;
 }
 
+main section article:hover i {
+    rotate: -90deg;
+}
+
 main section article i{
     display: block;
     font-size: 16px;
@@ -199,6 +203,7 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 500ms;
 }
 
 .price{
@@ -250,9 +255,10 @@ footer article i {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+    transition: color 500ms;
 }
 
-footer article i:hover{
+footer article:hover i{
     color: #0022AA;
 }
 
@@ -302,13 +308,14 @@ footer h6 {
         display: none;
     }
 
-    .article-detail:hover .description {
+    main article:hover .description {
         display: block;
     }
 
     main article {
         max-width: 45%;
         border-radius: 5px;
+        transition: box-shadow 500ms;
     }
     
     main article:hover {
